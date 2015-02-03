@@ -9,7 +9,9 @@ n = 0
 def calculateFraction(n):
   if (n % 2 == 0): # even
     s = np.random.uniform(0,(n/2)/n,100) # need to test iterations to see the effect on output
+    return np.mean(s)
   else: # odd
     s = np.random.uniform(0,((n+1)/2)/n,100)
+    return np.mean(s)
 
 calculateFraction(n)
